@@ -1,0 +1,528 @@
+@font-face {
+  font-family: "BebasNeue";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Vina Sans"), url(..//Fonts/BebasNeue-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: "BebasNeue";
+  background-image: url(..//Img/Deep\ Space.jpg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  color: white;
+}
+
+li {
+  list-style-type: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  border-bottom: 2px solid white;
+  border-radius: 40px;
+}
+
+.header-suptext {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 40px;
+  border: 2px solid white;
+  transition: background .2s linear, color .2s linear, border .1s linear;
+}
+
+.header-nav:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+
+.header-logotext {
+  font-size: 44px;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo {
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+}
+
+/* Main */
+
+main {
+  /* border: 2px white solid; */
+  /* border-radius: 40px; */
+  width: 100%;
+  height: 70vh;
+  max-width: 1200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.main-topic {
+  width: 30%;
+}
+
+.main-topictext {
+  margin: 10px 0 0 20px;
+}
+
+.main-toptext {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.main-linktext {
+  width: 70%;
+  font-size: 20px;
+  margin-left: 25px;
+  padding: 2px 25px;
+  transition: opacity .2s linear;
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  opacity: 0.7;
+}
+
+.main-linktext:hover {
+  opacity: 1;
+}
+
+.main-linktext::before {
+  content: "->";
+  font-size: 20px;
+  position: absolute;
+  left: 2%;
+  opacity: 0;
+  transition: opacity 0.2s, margin-left 0.2s;
+}
+
+.main-linktext:hover:before {
+  opacity: 1;
+  margin-left: 20px;
+}
+
+.main-listmusic {
+  width: 30%;
+}
+
+.main-listelemet {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition: .3s linear;
+  padding: 10px;
+}
+
+.main-number {
+  margin: 5px 5px 5px 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.main-img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.main-namesong {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.main-subname {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.main-play {
+  position: absolute;
+  top: 33%;
+  right: 5%;
+}
+
+.main-listelemet:hover {
+  background: gray;
+}
+
+.main-content {
+  position: absolute;
+  top: 10px;
+  left: 33%;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.main-content h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.main-content p {
+  font-size: 20px;
+  width: 85%;
+}
+
+.main-btns button {
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  border: 2px white solid;
+  border-radius: 40px;
+  outline: none;
+  background: transparent;
+  transition: background .2s linear, color .2s linear, border .1s linear;
+}
+
+.main-btns button:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+
+.main-btns button:last-child {
+  margin-left: 20px;
+}
+
+.main-masteryplay {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-top: 55px;
+  margin-left: 15px;
+}
+
+.main-wave {
+  width: 40px;
+  height: 40px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.main-wave .wave-element {
+  width: 4px;
+  height: 10px;
+  margin-right: 4px;
+  border-radius: 10px 10px 0 0;
+  background: white;
+  animation: unset;
+}
+
+.main-wave .wave-element:nth-child(2) {
+  height: 16px;
+  /* animation-delay: .4s; */
+}
+
+.main-wave .wave-element:nth-child(3) {
+  height: 8px;
+  /* animation-delay: .8s; */
+}
+
+/* JS script */
+
+.active .wave-element {
+  animation: wave .6s linear infinite;
+}
+
+.active .wave-element:nth-child(2) {
+  animation-delay: .4s;
+}
+
+.active .wave-element:nth-child(3) {
+  animation-delay: .8s;
+}
+
+.main-masteryplay img {
+  width: 45px;
+  height: 45px;
+}
+
+.main-masteryplay h3 {
+  width: 145px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.main-masteryplay .main-icons {
+  font-size: 24px;
+  width: 90px;
+  color: white;
+  margin: 0 20px 0 0px;
+}
+
+.main-masteryplay .main-icons .bi {
+  cursor: pointer;
+  outline: none;
+}
+
+.main-masteryplay span {
+  color: white;
+  width: 40px;
+  font-size: 18px;
+}
+
+.main-masteryplay #currentStart {
+  margin: 0 0 0 20px;
+}
+
+.main-masteryplay .main-bar {
+  position: relative;
+  width: 50%;
+  height: 2px;
+  background: white;
+  margin: 0 10px 0 10px;
+}
+
+.main-masteryplay .main-bar .bar-element {
+  position: absolute;
+  background: gray;
+  width: 0%;
+  height: 100%;
+  top: 0;
+}
+
+.main-masteryplay .main-bar .bar-dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: gray;
+  border-radius: 50%;
+  left: -1px;
+  top: -2px;
+  transition: 1s linear;
+}
+
+.main-masteryplay .main-bar .bar-dot::before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  left: -6px;
+  top: -6px;
+  transition: 1s linear;
+  box-shadow: inset 0 0 3px gray;
+}
+
+.main-masteryplay .main-bar input {
+  position: absolute;
+  width: 100%;
+  top: -6px;
+  left: 0;
+  cursor: pointer;
+  z-index: 100;
+  transition: 3s linear;
+  opacity: 0;
+}
+
+.main-masteryplay .main-vol {
+  position: relative;
+  width: 100px;
+  height: 2px;
+  margin-left: 50px;
+  background: white;
+}
+
+.main-masteryplay .main-vol .bi {
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  top: -16px;
+  left: -40px;
+}
+
+.main-masteryplay .main-vol input {
+  position: absolute;
+  width: 100%;
+  top: -6px;
+  left: 0;
+  cursor: pointer;
+  z-index: 100;
+  transition: 3s linear;
+  opacity: 0;
+}
+
+.main-masteryplay .main-vol .vol-element {
+  position: absolute;
+  background: gray;
+  width: 0%;
+  height: 100%;
+  top: 0;
+}
+
+.main-masteryplay .main-vol .vol-dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: gray;
+  border-radius: 50%;
+  left: -1px;
+  top: -2px;
+  transition: 1s linear;
+}
+
+.main-masteryplay .main-vol .vol-dot::before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  left: -6px;
+  top: -6px;
+  transition: 1s linear;
+  box-shadow: inset 0 0 3px gray;
+}
+
+.main-popular {
+  width: 85%;
+  height: auto;
+  margin-top: 40px;
+}
+
+.main-popular .popular-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-popular .popular-text .bi {
+  color: white;
+  cursor: pointer;
+  transition: .3s linear;
+  opacity: 0.7;
+}
+
+.main-popular .popular-text .bi:hover {
+  opacity: 1;
+}
+
+.main-popular .popular-song {
+  width: 100%;
+  height: 150px;
+  margin-top: 15px;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.main-popular .popular-song::-webkit-scrollbar {
+  display: none;
+}
+
+.main-popular .popular-song li {
+  min-width: 100px;
+  height: 140px;
+  list-style-type: none;
+  margin-right: 10px;
+  transition: .3s linear;
+}
+
+.main-popular .popular-song li:hover {
+  background: gray;
+}
+
+.main-popular .popular-song li .song-img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-popular .popular-song li .song-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-popular .popular-song li .song-img .bi {
+  position: absolute;
+  left: 40%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: .3s linear;
+  opacity: 0;
+}
+
+.main-popular .popular-song li .song-img:hover .bi {
+  opacity: 1;
+}
+
+.main-popular .popular-song li .main-namesong {
+  padding: 5px 0 0 5px;
+  line-height: 15px;
+  font-size: 14px;
+}
+
+.main-popular .popular-song li .main-namesong .main-subname {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+@keyframes wave {
+
+  0% {
+    height: 10px;
+  }
+
+  50% {
+    height: 18px;
+  }
+
+  100% {
+    height: 10px;
+  }
+
+}

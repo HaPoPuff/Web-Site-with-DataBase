@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "BebasNeue";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Vina Sans"), url(..//Fonts/BebasNeue-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: "BebasNeue";
+  background-image: url(..//Img/Deep\ Space.jpg);
+}
+
+h2 {
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/* Main */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.main-form {
+  max-width: 375px;
+  max-height: 450px;
+}
+
+.main-logotext {
+  font-size: 38px;
+  text-align: center;
+}
+
+.main-input {
+  position: relative;
+  margin: 30px;
+  border-bottom: 2px solid white;
+}
+
+.main-input input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  color: white;
+}
+
+.main-input label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 26px;
+  pointer-events: none;
+  transition: .3s;
+}
+
+input:focus~label,
+input:valid~label {
+  top: -7px;
+}
+
+.main-radio {
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-radio input {
+  margin-right: 8px;
+}
+
+.main-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 35px;
+  border-radius: 40px;
+  transition: background .2s linear, color .2s linear;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: 700;
+  background: transparent;
+  color: white;
+  font-family: "BebasNeue";
+}
+
+button::after {
+  content: "<-";
+  margin-left: 10px;
+}
+
+button::before {
+  content: "->";
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+::after,
+::before {
+  color: white;
+}
+
+.main-ifreg {
+  font-size: 26px;
+  text-align: center;
+  margin-top: 20px;
+}
