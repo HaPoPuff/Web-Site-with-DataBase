@@ -1,3 +1,14 @@
+<?php
+include("check.php");
+
+if (isset($_GET['logout'])) {
+  session_destroy();
+  unset($_SESSION['user']);
+  header("location: Music.php");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +26,8 @@
 
 </head>
 
+
+
 <body>
 
   <header>
@@ -26,8 +39,24 @@
         <p class="header-logo">Ogrizok-Tryapka-Platok</p>
       </div>
       <div class="header-suptext">
-        <a class="header-nav" href="">Music</a>
-        <a class="header-nav" href="">Sing In</a>
+
+        <?php if (isset($_SESSION['user'])): ?>
+          <p style="margin-top: 16px; font-size: 24px;">
+
+            <?php echo $_SESSION['user']; ?>
+
+          </p>
+
+          <a class="header-nav" href="Music.php?logout='1'">logout</a>
+
+        <?php else: ?>
+
+          <a class="header-nav" href="Reg.php">Register</a>
+          <a class="header-nav" href="Sign.php">Sing In</a>
+
+        <?php endif ?>
+
+
       </div>
     </div>
   </header>

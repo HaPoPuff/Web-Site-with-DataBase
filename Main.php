@@ -12,16 +12,16 @@
 
   <header>
     <div class="header-container">
-      <div class="header-suptext">
+      <!-- <div class="header-suptext">
         <a class="header-nav" href="">My PlayList & Songs</a>
-      </div>
+      </div> -->
       <div class="header-logotext">
         <p class="header-logo">Ogrizok-Tryapka-Platok</p>
       </div>
-      <div class="header-suptext">
+      <!-- <div class="header-suptext">
         <a class="header-nav" href="">Music</a>
         <a class="header-nav" href="">Sing In</a>
-      </div>
+      </div> -->
     </div>
   </header>
 
@@ -32,7 +32,7 @@
         <h1 class="logo-bigtext">Lorem ipsum dolor sit amet</h1>
         <p class="logo-suptext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum alias quas provident,
           libero fugit quia minima</p>
-        <p class="logo-nav"><a class="logo-btn" href="">Let's go start</a></p>
+        <p class="logo-nav"><a class="logo-btn" href="Reg.php">Let's go start</a></p>
       </div>
     </div>
 

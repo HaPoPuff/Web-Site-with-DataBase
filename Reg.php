@@ -1,3 +1,4 @@
+<?php include("check.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,28 +15,28 @@
   <main class="main-reg">
     <div class="main-container">
       <div class="main-form">
-        <form action="">
+        <form action="Reg.php" method="post">
           <h2 class="main-logotext">Registration</h2>
-          <div class="main-input">
+          <!-- <div class="main-input">
             <input type="text" required>
             <label>Login</label>
-          </div>
+          </div> -->
           <div class="main-input">
-            <input type="email" required>
+            <input name="email" type="email" required>
             <label>Email</label>
           </div>
           <div class="main-input">
-            <input type="password" required>
+            <input name="password" type="password" required>
             <label>Password</label>
           </div>
           <div class="main-radio">
             <label><input type="checkbox">Accept all rules</label>
           </div>
           <div class="main-btn">
-            <button>Register</button>
+            <button type="submit" name="register">Register</button>
           </div>
           <div class="main-ifreg">
-            <label>I almost have account <b>-> </b><a href="">Log In</a></label>
+            <label>I almost have account <b>-> </b><a href="Sign.php">Log In</a></label>
           </div>
         </form>
       </div>
