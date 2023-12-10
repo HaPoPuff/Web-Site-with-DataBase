@@ -74,41 +74,41 @@ if (isset($_GET['logout'])) {
       </div>
 
       <div class="main-listmusic">
-        <li class="main-listelemet">
+        <li class="main-listelemet song-element">
           <span class="main-number">01</span>
-          <img class="main-img" src="Img/ImgSongs/OnMyWay.jfif" alt="Alan">
+          <img class="main-img" src="Img/ImgSongs/1.jpg" alt="Alan">
           <h3 class="main-namesong">
             On My Way
             <div class="main-subname">Alan Walker</div>
-            <i class="bi main-play bi-play-circle-fill" id="1"></i>
           </h3>
+          <i class="bi main-play bi-play-circle-fill" id="1"></i>
         </li>
-        <li class="main-listelemet">
+        <li class="main-listelemet song-element">
           <span class="main-number">02</span>
-          <img class="main-img" src="Img/ImgSongs/OnMyWay.jfif" alt="Alan">
+          <img class="main-img" src="Img/ImgSongs/1.jpg" alt="Alan">
           <h3 class="main-namesong">
             On My Way
             <div class="main-subname">Alan Walker</div>
-            <i class="bi main-play bi-play-circle-fill" id="2"></i>
           </h3>
+          <i class="bi main-play bi-play-circle-fill" id="2"></i>
         </li>
-        <li class="main-listelemet">
+        <li class="main-listelemet song-element">
           <span class="main-number">03</span>
-          <img class="main-img" src="Img/ImgSongs/OnMyWay.jfif" alt="Alan">
+          <img class="main-img" src="Img/ImgSongs/1.jpg" alt="Alan">
           <h3 class="main-namesong">
             On My Way
             <div class="main-subname">Alan Walker</div>
-            <i class="bi main-play bi-play-circle-fill" id="3"></i>
           </h3>
+          <i class="bi main-play bi-play-circle-fill" id="3"></i>
         </li>
-        <li class="main-listelemet">
+        <li class="main-listelemet song-element">
           <span class="main-number">04</span>
-          <img class="main-img" src="Img/ImgSongs/OnMyWay.jfif" alt="Alan">
+          <img class="main-img" src="Img/ImgSongs/1.jpg" alt="Alan">
           <h3 class="main-namesong">
             On My Way
             <div class="main-subname">Alan Walker</div>
-            <i class="bi main-play bi-play-circle-fill" id="4"></i>
           </h3>
+          <i class="bi main-play bi-play-circle-fill" id="4"></i>
         </li>
       </div>
     </div>
@@ -119,7 +119,7 @@ if (isset($_GET['logout'])) {
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci ipsam tempore necessitatibus quam, ad
           officiis porro eos illum aliquid, quidem beatae, voluptates nam quaerat pariatur rem!</p>
         <div class="main-btns">
-          <button>PLAY</button>
+          <button id="playButton">PLAY</button>
           <button>FOLLOW</button>
         </div>
       </div>
@@ -127,14 +127,14 @@ if (isset($_GET['logout'])) {
         <div class="popular-text">
           <h4>Popular Song</h4>
           <div class="popular-btn">
-            <i id="left" class="bi bi-arrow-left"></i>
-            <i id="right" class="bi bi-arrow-right"></i>
+            <i id="left_scroll" class="bi bi-arrow-left"></i>
+            <i id="right_scroll" class="bi bi-arrow-right"></i>
           </div>
         </div>
         <div class="popular-song">
           <li class="song-element">
             <div class="song-img">
-              <img src="Img/ImgSongs/OnMyWay.jfif" alt="Alan">
+              <img src="Img/ImgSongs/1.jpg" alt="Alan">
               <i class="bi main-play bi-play-circle-fill" id="5"></i>
             </div>
             <h3 class="main-namesong"> On My Way
@@ -144,8 +144,8 @@ if (isset($_GET['logout'])) {
           </li>
           <li class="song-element">
             <div class="song-img">
-              <img src="Img/ImgSongs/OnMyWay.jfif" alt="Alan">
-              <i class="bi main-play bi-play-circle-fill" id="5"></i>
+              <img src="Img/ImgSongs/1.jpg" alt="Alan">
+              <i class="bi main-play bi-play-circle-fill" id="6"></i>
             </div>
             <h3 class="main-namesong"> On My Way
               <br>
@@ -154,8 +154,8 @@ if (isset($_GET['logout'])) {
           </li>
           <li class="song-element">
             <div class="song-img">
-              <img src="Img/ImgSongs/OnMyWay.jfif" alt="Alan">
-              <i class="bi main-play bi-play-circle-fill" id="5"></i>
+              <img src="Img/ImgSongs/1.jpg" alt="Alan">
+              <i class="bi main-play bi-play-circle-fill" id="7"></i>
             </div>
             <h3 class="main-namesong"> On My Way
               <br>
@@ -164,8 +164,8 @@ if (isset($_GET['logout'])) {
           </li>
           <li class="song-element">
             <div class="song-img">
-              <img src="Img/ImgSongs/OnMyWay.jfif" alt="Alan">
-              <i class="bi main-play bi-play-circle-fill" id="5"></i>
+              <img src="Img/ImgSongs/1.jpg" alt="Alan">
+              <i class="bi main-play bi-play-circle-fill" id="8"></i>
             </div>
             <h3 class="main-namesong"> On My Way
               <br>
@@ -174,8 +174,8 @@ if (isset($_GET['logout'])) {
           </li>
           <li class="song-element">
             <div class="song-img">
-              <img src="Img/ImgSongs/OnMyWay.jfif" alt="Alan">
-              <i class="bi main-play bi-play-circle-fill" id="5"></i>
+              <img src="Img/ImgSongs/1.jpg" alt="Alan">
+              <i class="bi main-play bi-play-circle-fill" id="9"></i>
             </div>
             <h3 class="main-namesong"> On My Way
               <br>
@@ -184,8 +184,8 @@ if (isset($_GET['logout'])) {
           </li>
           <li class="song-element">
             <div class="song-img">
-              <img src="Img/ImgSongs/OnMyWay.jfif" alt="Alan">
-              <i class="bi main-play bi-play-circle-fill" id="5"></i>
+              <img src="Img/ImgSongs/1.jpg" alt="Alan">
+              <i class="bi main-play bi-play-circle-fill" id="10"></i>
             </div>
             <h3 class="main-namesong"> On My Way
               <br>
@@ -194,8 +194,8 @@ if (isset($_GET['logout'])) {
           </li>
           <li class="song-element">
             <div class="song-img">
-              <img src="Img/ImgSongs/OnMyWay.jfif" alt="Alan">
-              <i class="bi main-play bi-play-circle-fill" id="5"></i>
+              <img src="Img/ImgSongs/1.jpg" alt="Alan">
+              <i class="bi main-play bi-play-circle-fill" id="11"></i>
             </div>
             <h3 class="main-namesong"> On My Way
               <br>
@@ -204,8 +204,8 @@ if (isset($_GET['logout'])) {
           </li>
           <li class="song-element">
             <div class="song-img">
-              <img src="Img/ImgSongs/OnMyWay.jfif" alt="Alan">
-              <i class="bi main-play bi-play-circle-fill" id="5"></i>
+              <img src="Img/ImgSongs/1.jpg" alt="Alan">
+              <i class="bi main-play bi-play-circle-fill" id="12"></i>
             </div>
             <h3 class="main-namesong"> On My Way
               <br>
@@ -224,32 +224,35 @@ if (isset($_GET['logout'])) {
         <div class="wave-element"></div>
         <div class="wave-element"></div>
       </div>
-      <img src="Img/ImgSongs/OnMyWay.jfif" alt="Alan">
-      <h3 class="main-namesong">
+      <img src="Img/ImgSongs/1.jpg" alt="Alan" id="poster_master_play">
+      <h3 id="title" class="main-namesong">
         On My Way <br>
         <div class="main-subname">Alan Walker</div>
       </h3>
       <div class="main-icons">
-        <i class="bi bi-skip-start-fill"></i>
-        <i class="bi bi-play-fill"></i>
-        <i class="bi bi-skip-end-fill"></i>
+        <i class="bi bi-skip-start-fill" id="back"></i>
+        <i class="bi bi-play-fill" id="masteryPlay"></i>
+        <i class="bi bi-skip-end-fill" id="next"></i>
       </div>
       <span id="currentStart">0:00</span>
       <div class="main-bar">
         <input type="range" id="seek" min="0" value="0" max="100">
-        <div class="bar-element" id="seek-element"></div>
+        <div class="bar-element" id="seek_element"></div>
         <div class="bar-dot"></div>
       </div>
       <span id="currentEnd">0:00</span>
       <div class="main-vol">
-        <i class="bi bi-volume-up-fill"></i>
+        <i class="bi bi-volume-down-fill" id="vol_icon"></i>
         <input type="range" id="vol" min="0" value="30" max="100">
         <div class="vol-element"></div>
-        <div class="vol-dot" id="vol-dot"></div>
+        <div class="vol-dot" id="vol_dot"></div>
       </div>
     </div>
 
+    <script src="app.js"></script>
   </main>
+
+
 </body>
 
 </html>

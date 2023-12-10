@@ -329,6 +329,7 @@ main {
   width: 0%;
   height: 100%;
   top: 0;
+  transition: 1s linear;
 }
 
 .main-masteryplay .main-bar .bar-dot {
@@ -399,6 +400,7 @@ main {
   width: 0%;
   height: 100%;
   top: 0;
+  transition: 1s linear;
 }
 
 .main-masteryplay .main-vol .vol-dot {
