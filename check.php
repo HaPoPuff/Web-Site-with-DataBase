@@ -41,7 +41,10 @@ if (isset($_POST['register'])) {
     $query = "INSERT INTO users (email, password) 
   			  VALUES('$email', '$password')";
     mysqli_query($db, $query);
-    $_SESSION['user'] = $email;
+    $new_user_id = mysqli_insert_id($db);
+
+    $_SESSION['user']['id'] = $new_user_id;
+    $_SESSION['user']['email'] = $email;
     $_SESSION['success'] = "You are now logged in";
     header('location: Music.php');
   }
@@ -66,7 +69,9 @@ if (isset($_POST['authorize'])) {
     $query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
     $results = mysqli_query($db, $query);
     if (mysqli_num_rows($results) == 1) {
-      $_SESSION['user'] = $email;
+      $user = mysqli_fetch_assoc($results);
+      $_SESSION['user']['id'] = $user['id'];
+      $_SESSION['user']['email'] = $email;
       $_SESSION['success'] = "You are now logged in";
       header('location: Music.php');
     } else {

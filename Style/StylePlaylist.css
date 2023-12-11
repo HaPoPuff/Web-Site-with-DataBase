@@ -1,0 +1,110 @@
+* {
+  color: white;
+}
+
+.playlist-form {
+  width: 50%;
+  margin-left: 200px;
+
+}
+
+.playlist-upload {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+
+}
+
+.playlist-upload input {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+
+.playlist-upload input:nth-child(n+5) {
+  /* opacity: 0;
+  transition: opacity .3s; */
+  color: white;
+  transition: color .3s;
+  border: 2px solid white;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  background: transparent;
+  transition: background .2s linear, color .2s linear, border .1s linear;
+}
+
+.playlist-upload input:nth-child(n+5):hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+
+
+.playlist-upload button {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  border: 2px white solid;
+  border-radius: 40px;
+  outline: none;
+  background: transparent;
+  transition: background .2s linear, color .2s linear, border .1s linear;
+  margin-top: 10px;
+}
+
+.playlist-upload button:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+
+.playlist-upload input[type=file]::-webkit-file-upload-button {
+  opacity: 0;
+  cursor: pointer;
+  height: 40px;
+  margin-right: 55px;
+}
+
+.main-listelemet {
+  width: 150%;
+}
+
+.main-namesong {
+  width: 50%;
+}
+
+audio {
+  width: 100%;
+}
+
+.main-listplaylist {
+  height: 54vh;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.main-listplaylist::-webkit-scrollbar {
+  display: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  border-top: 2px solid white;
+  border-radius: 40px;
+}

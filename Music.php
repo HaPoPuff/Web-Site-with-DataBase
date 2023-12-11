@@ -3,7 +3,7 @@ include("check.php");
 
 if (isset($_GET['logout'])) {
   session_destroy();
-  unset($_SESSION['user']);
+  unset($_SESSION['user']['id']);
   header("location: Music.php");
 }
 
@@ -33,17 +33,17 @@ if (isset($_GET['logout'])) {
   <header>
     <div class="header-container">
       <div class="header-suptext">
-        <a class="header-nav" href="">My PlayList & Songs</a>
+        <a class="header-nav" href="Playlist.php">My PlayList & Songs</a>
       </div>
       <div class="header-logotext">
         <p class="header-logo">Ogrizok-Tryapka-Platok</p>
       </div>
       <div class="header-suptext">
 
-        <?php if (isset($_SESSION['user'])): ?>
+        <?php if (isset($_SESSION['user']['id'])): ?>
           <p style="margin-top: 16px; font-size: 24px;">
 
-            <?php echo $_SESSION['user']; ?>
+            <?php echo $_SESSION['user']['email']; ?>
 
           </p>
 
