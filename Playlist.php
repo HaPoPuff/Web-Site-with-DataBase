@@ -98,6 +98,7 @@ if (!isset($_SESSION['user'])) {
             $author = $row['author'];
             $file = $row['file'];
             $image = $row['image'];
+            $song_id = $row['song_id'];
 
             // Теперь вы можете использовать эти переменные для формирования HTML-кода
             echo "<li class='main-listelemet song-element'>";
@@ -109,6 +110,8 @@ if (!isset($_SESSION['user'])) {
             echo "<source src='$file' type='audio/mp3'>";
             echo "Your browser does not support the audio element.";
             echo "</audio>";
+            echo "<a class='song-link' href='delete.php?id=$song_id'>delete</a>";
+            echo "<a class='song-link' href='edit.php?id=$song_id'>edit</a>";
             echo "</li>";
           }
 

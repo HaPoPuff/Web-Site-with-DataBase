@@ -2,6 +2,8 @@
   color: white;
 }
 
+
+
 .playlist-form {
   width: 50%;
   margin-left: 200px;
@@ -71,16 +73,70 @@
 }
 
 .main-listelemet {
-  width: 150%;
+  width: 160%;
 }
 
 .main-namesong {
   width: 50%;
 }
 
+.playlist-edit {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+  height: 600px;
+  justify-content: center;
+
+}
+
+.playlist-edit form {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center
+}
+
+.playlist-edit label {
+  font-size: 30px;
+}
+
+.playlist-edit input {
+  width: 50%;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+
+.playlist-edit button {
+  width: 50%;
+  height: 50px;
+  font-size: 30px;
+  color: white;
+  border: 2px white solid;
+  border-radius: 40px;
+  outline: none;
+  background: transparent;
+  transition: background .2s linear, color .2s linear, border .1s linear;
+  margin-top: 10px;
+}
+
+.playlist-edit button:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+
 audio {
   width: 100%;
+  background-color: transparent;
+  border: none;
 }
+
 
 .main-listplaylist {
   height: 54vh;
@@ -90,6 +146,10 @@ audio {
 
 .main-listplaylist::-webkit-scrollbar {
   display: none;
+}
+
+.song-link {
+  margin: 5px;
 }
 
 footer {
